@@ -1,4 +1,4 @@
 # JKLU_Events
 ## Authors :
-### Vineet Kumar Sharma
+### 1. Vineet Kumar Sharma
 ### Prachika Kanodia
