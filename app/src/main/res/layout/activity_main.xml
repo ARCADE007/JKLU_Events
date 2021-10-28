@@ -8,18 +8,22 @@
     tools:context=".MainActivity">
 
     <com.google.android.material.textfield.TextInputLayout
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
         android:id="@+id/textField"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="Hello World">
-
-        <com.google.android.material.textfield.TextInputEditText
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            />
+        android:hint="Hello World"
+        app:startIconDrawable="@drawable/ic_launcher_background">
 
     </com.google.android.material.textfield.TextInputLayout>
 
+    <com.google.android.material.textfield.TextInputEditText
 
+        android:layout_width="284dp"
+        android:layout_height="29dp"
+        app:theme="@style/AppTheme"
+
+        tools:layout_editor_absoluteX="50dp"
+        tools:layout_editor_absoluteY="196dp" />
 
 </androidx.constraintlayout.widget.ConstraintLayout >
