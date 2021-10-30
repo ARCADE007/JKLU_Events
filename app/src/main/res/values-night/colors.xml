@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--Primary Color-->
+    <color name="textWhiteBlack">#1E1E1E</color>
+    <color name="textBlackWhite">#FFFFFF</color>
+    <color name="textWhiteOrange">#F48222</color>
+    <color name="textBlackOrange">#F48222</color>
+    <color name="backgroundWhiteBlack">#1E1E1E</color>
+    <color name="backgroundOrangeBlack">#1E1E1E</color>
+    <color name="backgroundCreamGrey">#7A7979</color>
+    <color name="emailBlueWhite">#FFFFFF</color>
+    <color name="backgroundIcon">#F48222</color>
+    <color name="icon">#1E1E1E</color>
+    <color name="commonIcon">#0D8CD1</color>
+
+</resources>
