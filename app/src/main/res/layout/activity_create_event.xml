@@ -1,0 +1,431 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/backgroundWhiteBlack"
+    tools:context=".createEvent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+        <ImageView
+            android:id="@+id/back_arrow"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_gravity="start"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="20dp"
+            android:contentDescription="@string/app_name"
+            android:src="@drawable/back_arrow"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="@string/create_event"
+            android:textColor="@color/blue"
+            android:textSize="50sp"
+            android:textStyle="bold"/>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="45dp"
+            android:layout_marginEnd="15dp"
+            android:rotation="360"
+            app:cardCornerRadius="10dp"
+            app:cardElevation="6dp">
+
+            <ImageView
+                android:id="@+id/input_image"
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:contentDescription="@string/input_image"
+                android:scaleType="centerCrop"
+                app:srcCompat="@drawable/input_image" />
+
+        </androidx.cardview.widget.CardView>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/eventName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:hint="@string/event_name"
+            app:boxCornerRadiusBottomEnd="10dp"
+            app:boxBackgroundColor="@color/backgroundCreamGrey"
+            app:boxCornerRadiusBottomStart="10dp"
+            app:boxCornerRadiusTopEnd="10dp"
+            app:boxCornerRadiusTopStart="10dp"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_margin="20dp"
+                />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <Button
+            android:id="@+id/startDate_endDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:text="@string/select_date"
+            android:textSize="15sp"
+            app:icon="@drawable/calender" />
+            <!-- Will change select date with selected date on button       -->
+    <LinearLayout
+        android:layout_width="370dp"
+        android:layout_height="wrap_content" >
+        <Button
+            android:id="@+id/start_time"
+            android:layout_width="wrap_content"
+            android:layout_margin="2dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_weight="1"
+            android:text="@string/start_time"
+            android:textSize="12sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:icon="@drawable/time"/>
+        <Button
+            android:id="@+id/end_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_margin="2dp"
+            android:layout_weight="1"
+            android:text="@string/end_time"
+            android:textSize="12sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:icon="@drawable/time"/>
+    </LinearLayout>
+        <!-- Will change select time with selected time on button       -->
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/venue"
+            android:layout_width="370dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            app:boxBackgroundColor="@color/backgroundCreamGrey"
+            android:hint="@string/venue"
+            app:boxCornerRadiusBottomEnd="10dp"
+            app:boxCornerRadiusBottomStart="10dp"
+            app:boxCornerRadiusTopEnd="10dp"
+            app:boxCornerRadiusTopStart="10dp"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                />
+
+        </com.google.android.material.textfield.TextInputLayout>
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/registrationLink"
+            android:layout_width="370dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:hint="@string/registration_link"
+            app:boxCornerRadiusBottomEnd="10dp"
+            app:boxCornerRadiusBottomStart="10dp"
+            app:boxBackgroundColor="@color/backgroundCreamGrey"
+            app:boxCornerRadiusTopEnd="10dp"
+            app:boxCornerRadiusTopStart="10dp"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                />
+
+        </com.google.android.material.textfield.TextInputLayout>
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/eventDescription"
+            android:layout_width="370dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:hint="@string/event_description"
+            app:boxBackgroundColor="@color/backgroundCreamGrey"
+            app:boxCornerRadiusBottomEnd="10dp"
+            app:boxCornerRadiusBottomStart="10dp"
+            app:boxCornerRadiusTopEnd="10dp"
+
+            app:boxCornerRadiusTopStart="10dp"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="300dp"
+                android:gravity="top"
+
+                />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="20dp">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/faculty_coordinator"
+                android:textSize="20sp"
+                android:textStyle="bold"/>
+
+        </LinearLayout>
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/facultyName"
+            android:layout_width="370dp"
+            android:layout_height="wrap_content"
+            android:hint="@string/faculty_name"
+            app:boxCornerRadiusBottomEnd="10dp"
+            app:boxCornerRadiusBottomStart="10dp"
+            app:boxBackgroundColor="@color/backgroundCreamGrey"
+            app:boxCornerRadiusTopEnd="10dp"
+            app:boxCornerRadiusTopStart="10dp"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/facultyEmail"
+            android:layout_width="370dp"
+            android:layout_height="wrap_content"
+            android:hint="@string/faculty_email"
+            app:boxCornerRadiusBottomEnd="10dp"
+            app:boxBackgroundColor="@color/backgroundCreamGrey"
+            android:layout_marginTop="20dp"
+            app:boxCornerRadiusBottomStart="10dp"
+            app:boxCornerRadiusTopEnd="10dp"
+            app:boxCornerRadiusTopStart="10dp"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/facultyContact"
+            android:layout_width="370dp"
+            android:layout_height="wrap_content"
+            android:hint="@string/faculty_contact"
+            app:boxCornerRadiusBottomEnd="10dp"
+            android:layout_marginTop="20dp"
+            app:boxBackgroundColor="@color/backgroundCreamGrey"
+            app:boxCornerRadiusBottomStart="10dp"
+            app:boxCornerRadiusTopEnd="10dp"
+            app:boxCornerRadiusTopStart="10dp"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="20dp">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/student_coordinator_1"
+                android:textSize="20sp"
+                android:textStyle="bold"/>
+
+        </LinearLayout>
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/studentName1"
+            android:layout_width="370dp"
+            android:layout_height="wrap_content"
+            android:hint="@string/student_name"
+            app:boxCornerRadiusBottomEnd="10dp"
+            app:boxCornerRadiusBottomStart="10dp"
+            app:boxBackgroundColor="@color/backgroundCreamGrey"
+            app:boxCornerRadiusTopEnd="10dp"
+            app:boxCornerRadiusTopStart="10dp"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/studentEmail1"
+            android:layout_width="370dp"
+            android:layout_height="wrap_content"
+            android:hint="@string/student_email"
+            app:boxBackgroundColor="@color/backgroundCreamGrey"
+            app:boxCornerRadiusBottomEnd="10dp"
+            android:layout_marginTop="20dp"
+            app:boxCornerRadiusBottomStart="10dp"
+            app:boxCornerRadiusTopEnd="10dp"
+            app:boxCornerRadiusTopStart="10dp"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/studentContact1"
+            android:layout_width="370dp"
+            android:layout_height="wrap_content"
+            android:hint="@string/student_contact"
+            app:boxCornerRadiusBottomEnd="10dp"
+            android:layout_marginTop="20dp"
+            app:boxBackgroundColor="@color/backgroundCreamGrey"
+            app:boxCornerRadiusBottomStart="10dp"
+            app:boxCornerRadiusTopEnd="10dp"
+            app:boxCornerRadiusTopStart="10dp"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                />
+
+        </com.google.android.material.textfield.TextInputLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="20dp">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/student_coordinator_2"
+                android:textSize="20sp"
+                android:textColor="@color/textBlackOrange"
+                android:textStyle="bold"/>
+
+        </LinearLayout>
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/studentName2"
+            android:layout_width="370dp"
+            android:layout_height="wrap_content"
+            android:hint="@string/student_name"
+            app:boxCornerRadiusBottomEnd="10dp"
+            app:boxCornerRadiusBottomStart="10dp"
+            app:boxBackgroundColor="@color/backgroundCreamGrey"
+            app:boxCornerRadiusTopEnd="10dp"
+            app:boxCornerRadiusTopStart="10dp"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/studentEmail2"
+            android:layout_width="370dp"
+            android:layout_height="wrap_content"
+            android:hint="@string/student_email"
+            app:boxCornerRadiusBottomEnd="10dp"
+            app:boxBackgroundColor="@color/backgroundCreamGrey"
+            android:layout_marginTop="20dp"
+            app:boxCornerRadiusBottomStart="10dp"
+            app:boxCornerRadiusTopEnd="10dp"
+            app:boxCornerRadiusTopStart="10dp"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/studentContact2"
+            android:layout_width="370dp"
+            android:layout_height="wrap_content"
+            android:hint="@string/student_contact"
+            app:boxCornerRadiusBottomEnd="10dp"
+            android:layout_marginTop="20dp"
+            app:boxCornerRadiusBottomStart="10dp"
+            app:boxBackgroundColor="@color/backgroundCreamGrey"
+            app:boxCornerRadiusTopEnd="10dp"
+            app:boxCornerRadiusTopStart="10dp"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="@string/by_creating_event_you_confirm_that_you_accept_our"
+            android:textColor="@color/textBlackWhite"
+            android:textSize="15sp"
+            android:textStyle="normal"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/terms_of_use_privacy_policy"
+            android:textColor="@color/orange"
+            android:textSize="15sp"
+            android:textStyle="bold"/>
+
+        <Button
+            android:id="@+id/textButton"
+            android:layout_width="318dp"
+            android:layout_height="63dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="20dp"
+            android:text="@string/create_event"
+            android:textColor="@color/textWhiteBlack"
+            android:backgroundTint="@color/orange"
+            android:textSize="20sp"
+            app:cornerRadius="20dp" />
+
+
+
+
+
+
+
+
+
+
+    </LinearLayout>
+
+</ScrollView>

@@ -1,2 +1,24 @@
 <?xml version="1.0" encoding="utf-8"?>
-<resources></resources>
+<resources>
+    <string name="input_image">Input Image</string>
+    <string name="event_name">Event Name *</string>
+    <string name="selected_date_is">Selected Date is :</string>
+    <string name="select_date">Select Date *</string>
+    <string name="start_time">Start Time *</string>
+    <string name="end_time">End Time *</string>
+    <string name="venue">Venue *</string>
+    <string name="registration_link">Registration Link</string>
+    <string name="event_description">Event Description *</string>
+    <string name="faculty_name">Faculty Name *</string>
+    <string name="faculty_coordinator">Faculty Coordinator *</string>
+    <string name="faculty_email">Faculty Email *</string>
+    <string name="faculty_contact">Faculty Contact *</string>
+    <string name="student_coordinator_1">Student Coordinator 1 *</string>
+    <string name="student_name">Student Name *</string>
+    <string name="student_email">Student Email *</string>
+    <string name="student_contact">Student Contact *</string>
+    <string name="student_coordinator_2">Student Coordinator 2 *</string>
+    <string name="by_creating_event_you_confirm_that_you_accept_our">By Creating event you confirm that you accept our</string>
+    <string name="terms_of_use_privacy_policy"><![CDATA[Terms of use & Privacy Policy]]></string>
+    <string name="create_event">Create Event</string>
+</resources>
