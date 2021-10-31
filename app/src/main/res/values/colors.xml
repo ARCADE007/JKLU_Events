@@ -1,17 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 <!--Primary Color-->
-    <color name="orange">#F48222</color>
-    <color name="darkBlue">#176690</color>
-    <color name="cream">#FBF1D9</color>
-    <color name="black">#FF000000</color>
-    <color name="white">#FFFFFFFF</color>
-
-<!--Light Mode-->
-    <color name="lightBlue">#0D8CD1</color>
-
-<!--Dark Mode-->
-    <color name="grey25">#7A7979</color>
-    <color name="darkBlack">#1E1E1E</color>
+    <color name="textWhiteBlack">#FFFFFF</color>
+    <color name="textBlackWhite">#FF000000</color>
+    <color name="textWhiteOrange">#FFFFFF</color>
+    <color name="textBlackOrange">#FF000000</color>
+    <color name="backgroundWhiteBlack">#FFFFFF</color>
+    <color name="backgroundOrangeBlack">#F48222</color>
+    <color name="backgroundCreamGrey">#FBF1D9</color>
+    <color name="emailBlueWhite">#176690</color>
+    <color name="backgroundIcon">#176690</color>
+    <color name="icon">#FFFFFF</color>
+    <color name="commonIcon">#0D8CD1</color>
 
 </resources>
