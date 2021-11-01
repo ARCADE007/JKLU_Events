@@ -22,6 +22,7 @@
             android:layout_marginLeft="20dp"
             android:contentDescription="@string/app_name"
             android:src="@drawable/back_arrow"
+
             />
         <TextView
             android:layout_width="wrap_content"
@@ -29,12 +30,13 @@
             android:layout_marginTop="10dp"
             android:text="@string/create_event"
             android:textColor="@color/blue"
-            android:textSize="50sp"
+            android:textSize="35sp"
+            android:fontFamily="@font/roboto_medium"
             android:textStyle="bold"/>
 
         <androidx.cardview.widget.CardView
             android:layout_width="match_parent"
-            android:layout_height="150dp"
+            android:layout_height="match_parent"
             android:layout_marginStart="15dp"
             android:layout_marginTop="45dp"
             android:layout_marginEnd="15dp"
@@ -45,7 +47,7 @@
             <ImageView
                 android:id="@+id/input_image"
                 android:layout_width="match_parent"
-                android:layout_height="150dp"
+                android:layout_height="match_parent"
                 android:contentDescription="@string/input_image"
                 android:scaleType="centerCrop"
                 app:srcCompat="@drawable/input_image" />
@@ -58,7 +60,11 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="20dp"
             android:hint="@string/event_name"
+            android:layout_margin="20dp"
+            android:textColorHint="@color/orange"
+            app:boxStrokeColor="@color/orange"
             app:boxCornerRadiusBottomEnd="10dp"
+            app:hintTextColor="@color/orange"
             app:boxBackgroundColor="@color/backgroundCreamGrey"
             app:boxCornerRadiusBottomStart="10dp"
             app:boxCornerRadiusTopEnd="10dp"
@@ -68,32 +74,42 @@
             <com.google.android.material.textfield.TextInputEditText
                 android:layout_width="match_parent"
                 android:layout_height="50dp"
-                android:layout_margin="20dp"
+                android:fontFamily="@font/roboto_light"
+                android:inputType="text"
+                android:imeOptions="actionNext"
+
+
                 />
 
         </com.google.android.material.textfield.TextInputLayout>
 
         <Button
             android:id="@+id/startDate_endDate"
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
+            android:layout_margin="20dp"
+            android:fontFamily="@font/roboto_light"
             android:layout_marginTop="10dp"
             android:text="@string/select_date"
+            android:backgroundTint="@color/orange"
             android:textSize="15sp"
             app:icon="@drawable/calender" />
             <!-- Will change select date with selected date on button       -->
     <LinearLayout
-        android:layout_width="370dp"
-        android:layout_height="wrap_content" >
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp">
         <Button
             android:id="@+id/start_time"
-            android:layout_width="wrap_content"
-            android:layout_margin="2dp"
+            android:layout_width="match_parent"
+            android:layout_margin="4dp"
             android:layout_height="wrap_content"
             android:layout_marginTop="10dp"
             android:layout_weight="1"
             android:text="@string/start_time"
+            android:backgroundTint="@color/orange"
+            android:fontFamily="@font/roboto_light"
             android:textSize="12sp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
@@ -101,12 +117,14 @@
             app:icon="@drawable/time"/>
         <Button
             android:id="@+id/end_time"
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="10dp"
-            android:layout_margin="2dp"
+            android:layout_margin="4dp"
             android:layout_weight="1"
             android:text="@string/end_time"
+            android:fontFamily="@font/roboto_light"
+            android:backgroundTint="@color/orange"
             android:textSize="12sp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
@@ -117,11 +135,15 @@
 
         <com.google.android.material.textfield.TextInputLayout
             android:id="@+id/venue"
-            android:layout_width="370dp"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="20dp"
             app:boxBackgroundColor="@color/backgroundCreamGrey"
             android:hint="@string/venue"
+            android:textColorHint="@color/orange"
+            app:hintTextColor="@color/orange"
+            app:boxStrokeColor="@color/orange"
+            android:layout_margin="20dp"
             app:boxCornerRadiusBottomEnd="10dp"
             app:boxCornerRadiusBottomStart="10dp"
             app:boxCornerRadiusTopEnd="10dp"
@@ -131,17 +153,25 @@
             <com.google.android.material.textfield.TextInputEditText
                 android:layout_width="match_parent"
                 android:layout_height="50dp"
+                android:fontFamily="@font/roboto_light"
+                android:imeOptions="actionNext"
+                android:inputType="text"
+
                 />
 
         </com.google.android.material.textfield.TextInputLayout>
         <com.google.android.material.textfield.TextInputLayout
             android:id="@+id/registrationLink"
-            android:layout_width="370dp"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="20dp"
             android:hint="@string/registration_link"
             app:boxCornerRadiusBottomEnd="10dp"
+            android:layout_margin="20dp"
+            android:textColorHint="@color/orange"
+            app:boxStrokeColor="@color/orange"
             app:boxCornerRadiusBottomStart="10dp"
+            app:hintTextColor="@color/orange"
             app:boxBackgroundColor="@color/backgroundCreamGrey"
             app:boxCornerRadiusTopEnd="10dp"
             app:boxCornerRadiusTopStart="10dp"
@@ -150,27 +180,37 @@
             <com.google.android.material.textfield.TextInputEditText
                 android:layout_width="match_parent"
                 android:layout_height="50dp"
+                android:fontFamily="@font/roboto_light"
+                android:imeOptions="actionNext"
+                android:inputType="text"
+
                 />
 
         </com.google.android.material.textfield.TextInputLayout>
         <com.google.android.material.textfield.TextInputLayout
             android:id="@+id/eventDescription"
-            android:layout_width="370dp"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="20dp"
             android:hint="@string/event_description"
+            android:layout_margin="20dp"
+            android:textColorHint="@color/orange"
+            app:boxStrokeColor="@color/orange"
             app:boxBackgroundColor="@color/backgroundCreamGrey"
             app:boxCornerRadiusBottomEnd="10dp"
             app:boxCornerRadiusBottomStart="10dp"
             app:boxCornerRadiusTopEnd="10dp"
-
+            app:hintTextColor="@color/orange"
             app:boxCornerRadiusTopStart="10dp"
             style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
 
             <com.google.android.material.textfield.TextInputEditText
                 android:layout_width="match_parent"
                 android:layout_height="300dp"
+                android:fontFamily="@font/roboto_light"
                 android:gravity="top"
+                android:imeOptions="actionNext"
+                android:inputType="text"
 
                 />
 
@@ -184,37 +224,51 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="@string/faculty_coordinator"
+                android:textColor="@color/textBlackOrange"
+                android:fontFamily="@font/roboto_medium"
                 android:textSize="20sp"
                 android:textStyle="bold"/>
 
         </LinearLayout>
         <com.google.android.material.textfield.TextInputLayout
             android:id="@+id/facultyName"
-            android:layout_width="370dp"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="@string/faculty_name"
+            android:textColorHint="@color/orange"
+            app:boxStrokeColor="@color/orange"
             app:boxCornerRadiusBottomEnd="10dp"
+            app:hintTextColor="@color/orange"
             app:boxCornerRadiusBottomStart="10dp"
             app:boxBackgroundColor="@color/backgroundCreamGrey"
             app:boxCornerRadiusTopEnd="10dp"
+            android:layout_margin="20dp"
             app:boxCornerRadiusTopStart="10dp"
             style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
 
             <com.google.android.material.textfield.TextInputEditText
                 android:layout_width="match_parent"
                 android:layout_height="50dp"
+                android:fontFamily="@font/roboto_light"
+                android:imeOptions="actionNext"
+                android:inputType="text"
+
                 />
 
         </com.google.android.material.textfield.TextInputLayout>
 
         <com.google.android.material.textfield.TextInputLayout
             android:id="@+id/facultyEmail"
-            android:layout_width="370dp"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="@string/faculty_email"
             app:boxCornerRadiusBottomEnd="10dp"
             app:boxBackgroundColor="@color/backgroundCreamGrey"
             android:layout_marginTop="20dp"
+            app:hintTextColor="@color/orange"
+            android:layout_margin="20dp"
+            android:textColorHint="@color/orange"
+            app:boxStrokeColor="@color/orange"
             app:boxCornerRadiusBottomStart="10dp"
             app:boxCornerRadiusTopEnd="10dp"
             app:boxCornerRadiusTopStart="10dp"
@@ -223,26 +277,38 @@
             <com.google.android.material.textfield.TextInputEditText
                 android:layout_width="match_parent"
                 android:layout_height="50dp"
+                android:fontFamily="@font/roboto_light"
+                android:inputType="textEmailAddress"
+                android:imeOptions="actionNext"
+
                 />
 
         </com.google.android.material.textfield.TextInputLayout>
 
         <com.google.android.material.textfield.TextInputLayout
             android:id="@+id/facultyContact"
-            android:layout_width="370dp"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="@string/faculty_contact"
             app:boxCornerRadiusBottomEnd="10dp"
             android:layout_marginTop="20dp"
+            android:textColorHint="@color/orange"
+            app:boxStrokeColor="@color/orange"
+            app:hintTextColor="@color/orange"
             app:boxBackgroundColor="@color/backgroundCreamGrey"
             app:boxCornerRadiusBottomStart="10dp"
             app:boxCornerRadiusTopEnd="10dp"
+            android:layout_margin="20dp"
             app:boxCornerRadiusTopStart="10dp"
             style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
 
             <com.google.android.material.textfield.TextInputEditText
                 android:layout_width="match_parent"
                 android:layout_height="50dp"
+                android:fontFamily="@font/roboto_light"
+                android:imeOptions="actionNext"
+                android:inputType="phone"
+
                 />
 
         </com.google.android.material.textfield.TextInputLayout>
@@ -255,37 +321,51 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="@string/student_coordinator_1"
+                android:textColor="@color/textBlackOrange"
                 android:textSize="20sp"
+                android:fontFamily="@font/roboto_medium"
                 android:textStyle="bold"/>
 
         </LinearLayout>
         <com.google.android.material.textfield.TextInputLayout
             android:id="@+id/studentName1"
-            android:layout_width="370dp"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="@string/student_name"
             app:boxCornerRadiusBottomEnd="10dp"
+            android:textColorHint="@color/orange"
+            app:boxStrokeColor="@color/orange"
+            app:hintTextColor="@color/orange"
             app:boxCornerRadiusBottomStart="10dp"
             app:boxBackgroundColor="@color/backgroundCreamGrey"
             app:boxCornerRadiusTopEnd="10dp"
+            android:layout_margin="20dp"
             app:boxCornerRadiusTopStart="10dp"
             style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
 
             <com.google.android.material.textfield.TextInputEditText
                 android:layout_width="match_parent"
                 android:layout_height="50dp"
+                android:fontFamily="@font/roboto_light"
+                android:imeOptions="actionNext"
+                android:inputType="text"
+
                 />
 
         </com.google.android.material.textfield.TextInputLayout>
 
         <com.google.android.material.textfield.TextInputLayout
             android:id="@+id/studentEmail1"
-            android:layout_width="370dp"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="@string/student_email"
             app:boxBackgroundColor="@color/backgroundCreamGrey"
             app:boxCornerRadiusBottomEnd="10dp"
             android:layout_marginTop="20dp"
+            android:layout_margin="20dp"
+            android:textColorHint="@color/orange"
+            app:hintTextColor="@color/orange"
+            app:boxStrokeColor="@color/orange"
             app:boxCornerRadiusBottomStart="10dp"
             app:boxCornerRadiusTopEnd="10dp"
             app:boxCornerRadiusTopStart="10dp"
@@ -294,17 +374,25 @@
             <com.google.android.material.textfield.TextInputEditText
                 android:layout_width="match_parent"
                 android:layout_height="50dp"
+                android:fontFamily="@font/roboto_light"
+                android:imeOptions="actionNext"
+                android:inputType="textEmailAddress"
+
                 />
 
         </com.google.android.material.textfield.TextInputLayout>
 
         <com.google.android.material.textfield.TextInputLayout
             android:id="@+id/studentContact1"
-            android:layout_width="370dp"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="@string/student_contact"
             app:boxCornerRadiusBottomEnd="10dp"
             android:layout_marginTop="20dp"
+            android:layout_margin="20dp"
+            android:textColorHint="@color/orange"
+            app:hintTextColor="@color/orange"
+            app:boxStrokeColor="@color/orange"
             app:boxBackgroundColor="@color/backgroundCreamGrey"
             app:boxCornerRadiusBottomStart="10dp"
             app:boxCornerRadiusTopEnd="10dp"
@@ -314,6 +402,10 @@
             <com.google.android.material.textfield.TextInputEditText
                 android:layout_width="match_parent"
                 android:layout_height="50dp"
+                android:fontFamily="@font/roboto_light"
+                android:imeOptions="actionNext"
+                android:inputType="phone"
+
                 />
 
         </com.google.android.material.textfield.TextInputLayout>
@@ -327,16 +419,21 @@
                 android:text="@string/student_coordinator_2"
                 android:textSize="20sp"
                 android:textColor="@color/textBlackOrange"
+                android:fontFamily="@font/roboto_medium"
                 android:textStyle="bold"/>
 
         </LinearLayout>
         <com.google.android.material.textfield.TextInputLayout
             android:id="@+id/studentName2"
-            android:layout_width="370dp"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="@string/student_name"
             app:boxCornerRadiusBottomEnd="10dp"
             app:boxCornerRadiusBottomStart="10dp"
+            android:layout_margin="20dp"
+            android:textColorHint="@color/orange"
+            app:boxStrokeColor="@color/orange"
+            app:hintTextColor="@color/orange"
             app:boxBackgroundColor="@color/backgroundCreamGrey"
             app:boxCornerRadiusTopEnd="10dp"
             app:boxCornerRadiusTopStart="10dp"
@@ -345,18 +442,25 @@
             <com.google.android.material.textfield.TextInputEditText
                 android:layout_width="match_parent"
                 android:layout_height="50dp"
+                android:fontFamily="@font/roboto_light"
+                android:imeOptions="actionNext"
+                android:inputType="text"
                 />
 
         </com.google.android.material.textfield.TextInputLayout>
 
         <com.google.android.material.textfield.TextInputLayout
             android:id="@+id/studentEmail2"
-            android:layout_width="370dp"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="@string/student_email"
             app:boxCornerRadiusBottomEnd="10dp"
             app:boxBackgroundColor="@color/backgroundCreamGrey"
             android:layout_marginTop="20dp"
+            android:layout_margin="20dp"
+            android:textColorHint="@color/orange"
+            app:boxStrokeColor="@color/orange"
+            app:hintTextColor="@color/orange"
             app:boxCornerRadiusBottomStart="10dp"
             app:boxCornerRadiusTopEnd="10dp"
             app:boxCornerRadiusTopStart="10dp"
@@ -365,26 +469,38 @@
             <com.google.android.material.textfield.TextInputEditText
                 android:layout_width="match_parent"
                 android:layout_height="50dp"
+                android:fontFamily="@font/roboto_light"
+                android:imeOptions="actionNext"
+                android:inputType="textEmailAddress"
+
                 />
 
         </com.google.android.material.textfield.TextInputLayout>
 
         <com.google.android.material.textfield.TextInputLayout
             android:id="@+id/studentContact2"
-            android:layout_width="370dp"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="@string/student_contact"
             app:boxCornerRadiusBottomEnd="10dp"
             android:layout_marginTop="20dp"
+            android:textColorHint="@color/orange"
+            app:boxStrokeColor="@color/orange"
             app:boxCornerRadiusBottomStart="10dp"
+            app:hintTextColor="@color/orange"
             app:boxBackgroundColor="@color/backgroundCreamGrey"
             app:boxCornerRadiusTopEnd="10dp"
+            android:layout_margin="20dp"
             app:boxCornerRadiusTopStart="10dp"
             style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
 
             <com.google.android.material.textfield.TextInputEditText
                 android:layout_width="match_parent"
                 android:layout_height="50dp"
+                android:fontFamily="@font/roboto_light"
+                android:imeOptions="actionDone"
+                android:inputType="phone"
+
                 />
 
         </com.google.android.material.textfield.TextInputLayout>
@@ -396,6 +512,7 @@
             android:text="@string/by_creating_event_you_confirm_that_you_accept_our"
             android:textColor="@color/textBlackWhite"
             android:textSize="15sp"
+            android:fontFamily="@font/roboto_light"
             android:textStyle="normal"/>
         <TextView
             android:layout_width="wrap_content"
@@ -403,6 +520,7 @@
             android:text="@string/terms_of_use_privacy_policy"
             android:textColor="@color/orange"
             android:textSize="15sp"
+            android:fontFamily="@font/roboto_medium"
             android:textStyle="bold"/>
 
         <Button
@@ -412,20 +530,11 @@
             android:layout_marginTop="20dp"
             android:layout_marginBottom="20dp"
             android:text="@string/create_event"
+            android:fontFamily="@font/roboto_light"
             android:textColor="@color/textWhiteBlack"
             android:backgroundTint="@color/orange"
             android:textSize="20sp"
             app:cornerRadius="20dp" />
-
-
-
-
-
-
-
-
-
-
     </LinearLayout>
 
 </ScrollView>
