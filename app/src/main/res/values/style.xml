@@ -5,7 +5,6 @@
 
             <!-- Customize your theme here -->
             <item name="colorPrimary">@color/backgroundOrangeBlack</item>
-        <item name="android:font"></item>
 
     </style>
 
