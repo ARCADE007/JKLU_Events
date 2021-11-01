@@ -7,10 +7,16 @@
     <color name="textBlackOrange">#F48222</color>
     <color name="backgroundWhiteBlack">#1E1E1E</color>
     <color name="backgroundOrangeBlack">#1E1E1E</color>
-    <color name="backgroundCreamGrey">#7A7979</color>
+    <color name="backgroundCreamGrey">#407A7979</color>
     <color name="emailBlueWhite">#FFFFFF</color>
     <color name="backgroundIcon">#F48222</color>
     <color name="icon">#1E1E1E</color>
     <color name="commonIcon">#0D8CD1</color>
+    <color name="orange">#F48222</color>
+    <color name="blue">#176690</color>
+    <color name="white">#FFFFFF</color>
+    <color name="black">#FF000000</color>
+    <color name="cream">#99FBF1D9</color>
+    <color name="lightBlue">#0D8CD1</color>
 
 </resources>
