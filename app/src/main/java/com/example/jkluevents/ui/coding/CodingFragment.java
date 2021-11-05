@@ -1,4 +1,4 @@
-package com.example.jkluevents.ui.gallery;
+package com.example.jkluevents.ui.coding;
 
 import android.os.Bundle;
 import android.view.LayoutInflater;
@@ -10,24 +10,23 @@ import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
 import androidx.lifecycle.Observer;
 import androidx.lifecycle.ViewModelProvider;
-import com.example.jkluevents.R;
-import com.example.jkluevents.databinding.FragmentGalleryBinding;
+import com.example.jkluevents.databinding.FragmentCodingBinding;
 
-public class GalleryFragment extends Fragment {
+public class CodingFragment extends Fragment {
 
-    private GalleryViewModel galleryViewModel;
-private FragmentGalleryBinding binding;
+    private CodingViewModel codingViewModel;
+private FragmentCodingBinding binding;
 
     public View onCreateView(@NonNull LayoutInflater inflater,
             ViewGroup container, Bundle savedInstanceState) {
-        galleryViewModel =
-                new ViewModelProvider(this).get(GalleryViewModel.class);
+        codingViewModel =
+                new ViewModelProvider(this).get(CodingViewModel.class);
 
-    binding = FragmentGalleryBinding.inflate(inflater, container, false);
+    binding = FragmentCodingBinding.inflate(inflater, container, false);
     View root = binding.getRoot();
 
-        final TextView textView = binding.textGallery;
-        galleryViewModel.getText().observe(getViewLifecycleOwner(), new Observer<String>() {
+        final TextView textView = binding.textCoding;
+        codingViewModel.getText().observe(getViewLifecycleOwner(), new Observer<String>() {
             @Override
             public void onChanged(@Nullable String s) {
                 textView.setText(s);

@@ -1,16 +1,16 @@
-package com.example.jkluevents.ui.home;
+package com.example.jkluevents.ui.dance;
 
 import androidx.lifecycle.LiveData;
 import androidx.lifecycle.MutableLiveData;
 import androidx.lifecycle.ViewModel;
 
-public class HomeViewModel extends ViewModel {
+public class DanceViewModel extends ViewModel {
 
     private MutableLiveData<String> mText;
 
-    public HomeViewModel() {
+    public DanceViewModel() {
         mText = new MutableLiveData<>();
-        mText.setValue("This is home fragment");
+        mText.setValue("This is dance fragment");
     }
 
     public LiveData<String> getText() {

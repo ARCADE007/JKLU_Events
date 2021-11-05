@@ -28,8 +28,11 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="bottom|end"
-        android:layout_marginEnd="@dimen/fab_margin"
-        android:layout_marginBottom="16dp"
-        app:srcCompat="@android:drawable/ic_dialog_email" />
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="20dp"
+        app:srcCompat="@drawable/plus"
+        app:backgroundTint="@color/backgroundIcon"
+        tools:ignore="VectorDrawableCompat"
+        android:layout_marginRight="20dp" />
 
 </androidx.coordinatorlayout.widget.CoordinatorLayout>

@@ -1,2 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
-<resources></resources>
+<resources>
+    <string name="menu_sports_club">Sports Club</string>
+    <string name="menu_dance_club">Dance Club</string>
+    <string name="menu_drama_club">Drama Club</string>
+    <string name="menu_announcement">Announcement</string>
+    <string name="menu_coding">Coding Club</string>
+    <string name="menu_music">Music Club</string>
+</resources>

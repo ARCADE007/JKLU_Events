@@ -1,16 +1,16 @@
-package com.example.jkluevents.ui.slideshow;
+package com.example.jkluevents.ui.announcement;
 
 import androidx.lifecycle.LiveData;
 import androidx.lifecycle.MutableLiveData;
 import androidx.lifecycle.ViewModel;
 
-public class SlideshowViewModel extends ViewModel {
+public class AnnouncementViewModel extends ViewModel {
 
     private MutableLiveData<String> mText;
 
-    public SlideshowViewModel() {
+    public AnnouncementViewModel() {
         mText = new MutableLiveData<>();
-        mText.setValue("This is slideshow fragment");
+        mText.setValue("This is announcement fragment");
     }
 
     public LiveData<String> getText() {
