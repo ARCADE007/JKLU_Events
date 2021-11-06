@@ -1,0 +1,11 @@
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+    <item name="announcement" type="drawable">@drawable/announcement</item>
+    <item name="coding" type="drawable">@drawable/coding</item>
+    <item name="music" type="drawable">@drawable/music</item>
+    <item name="sports" type="drawable">drawable/sports</item>
+    <item name="dance" type="drawable">drawable/dance</item>
+    <item name="drama" type="drawable">drawable/drama</item>
+    <item name="ic_menu_manage" type="drawable">@android:drawable/ic_menu_manage</item>
+    <item name="ic_menu_share" type="drawable">@android:drawable/ic_menu_share</item>
+    <item name="ic_menu_send" type="drawable">@android:drawable/ic_menu_send</item>
+</resources>

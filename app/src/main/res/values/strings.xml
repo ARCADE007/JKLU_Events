@@ -1,4 +1,10 @@
 <resources>
     <string name="app_name">JKLU Events</string>
+    <string name="title_activity_sidebar">sidebar</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_subtitle">xyz@jklu.edu.in</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
 
 </resources>
