@@ -1,4 +1,4 @@
-package com.example.jkluevents.ui.home;
+package com.example.jkluevents.ui.announcement;
 
 import android.os.Bundle;
 import android.view.LayoutInflater;
@@ -10,24 +10,23 @@ import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
 import androidx.lifecycle.Observer;
 import androidx.lifecycle.ViewModelProvider;
-import com.example.jkluevents.R;
-import com.example.jkluevents.databinding.FragmentHomeBinding;
+import com.example.jkluevents.databinding.FragmentAnnouncementBinding;
 
-public class HomeFragment extends Fragment {
+public class AnnouncementFragment extends Fragment {
 
-    private HomeViewModel homeViewModel;
-private FragmentHomeBinding binding;
+    private AnnouncementViewModel announcementViewModel;
+private FragmentAnnouncementBinding binding;
 
     public View onCreateView(@NonNull LayoutInflater inflater,
             ViewGroup container, Bundle savedInstanceState) {
-        homeViewModel =
-                new ViewModelProvider(this).get(HomeViewModel.class);
+        announcementViewModel =
+                new ViewModelProvider(this).get(AnnouncementViewModel.class);
 
-    binding = FragmentHomeBinding.inflate(inflater, container, false);
+    binding = FragmentAnnouncementBinding.inflate(inflater, container, false);
     View root = binding.getRoot();
 
-        final TextView textView = binding.textHome;
-        homeViewModel.getText().observe(getViewLifecycleOwner(), new Observer<String>() {
+        final TextView textView = binding.textAnnouncement;
+        announcementViewModel.getText().observe(getViewLifecycleOwner(), new Observer<String>() {
             @Override
             public void onChanged(@Nullable String s) {
                 textView.setText(s);

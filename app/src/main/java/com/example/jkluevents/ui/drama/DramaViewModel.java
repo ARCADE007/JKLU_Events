@@ -1,19 +1,20 @@
-package com.example.jkluevents.ui.gallery;
+package com.example.jkluevents.ui.drama;
 
 import androidx.lifecycle.LiveData;
 import androidx.lifecycle.MutableLiveData;
 import androidx.lifecycle.ViewModel;
 
-public class GalleryViewModel extends ViewModel {
+public class DramaViewModel extends ViewModel {
 
     private MutableLiveData<String> mText;
 
-    public GalleryViewModel() {
+    public DramaViewModel() {
         mText = new MutableLiveData<>();
-        mText.setValue("This is gallery fragment");
+        mText.setValue("This is drama fragment");
     }
 
     public LiveData<String> getText() {
         return mText;
     }
 }
+

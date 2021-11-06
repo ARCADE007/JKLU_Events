@@ -1,4 +1,4 @@
-package com.example.jkluevents.ui.slideshow;
+package com.example.jkluevents.ui.music;
 
 import android.os.Bundle;
 import android.view.LayoutInflater;
@@ -10,24 +10,23 @@ import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
 import androidx.lifecycle.Observer;
 import androidx.lifecycle.ViewModelProvider;
-import com.example.jkluevents.R;
-import com.example.jkluevents.databinding.FragmentSlideshowBinding;
+import com.example.jkluevents.databinding.FragmentMusicBinding;
 
-public class SlideshowFragment extends Fragment {
+public class MusicFragment extends Fragment {
 
-    private SlideshowViewModel slideshowViewModel;
-private FragmentSlideshowBinding binding;
+    private MusicViewModel musicViewModel;
+private FragmentMusicBinding binding;
 
     public View onCreateView(@NonNull LayoutInflater inflater,
             ViewGroup container, Bundle savedInstanceState) {
-        slideshowViewModel =
-                new ViewModelProvider(this).get(SlideshowViewModel.class);
+        musicViewModel =
+                new ViewModelProvider(this).get(MusicViewModel.class);
 
-    binding = FragmentSlideshowBinding.inflate(inflater, container, false);
+    binding = FragmentMusicBinding.inflate(inflater, container, false);
     View root = binding.getRoot();
 
-        final TextView textView = binding.textSlideshow;
-        slideshowViewModel.getText().observe(getViewLifecycleOwner(), new Observer<String>() {
+        final TextView textView = binding.textMusic;
+        musicViewModel.getText().observe(getViewLifecycleOwner(), new Observer<String>() {
             @Override
             public void onChanged(@Nullable String s) {
                 textView.setText(s);
