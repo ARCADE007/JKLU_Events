@@ -1,2 +1,20 @@
 <?xml version="1.0" encoding="utf-8"?>
-<resources></resources>
+<resources>
+    <string name="view_event_name_poster">Event Name</string>
+    <string name="view_starts">Starts</string>
+    <string name="view_ends">Ends</string>
+    <string name="view_from">From</string>
+    <string name="view_to">To</string>
+    <string name="view_registration_link">Registration Link</string>
+    <string name="view_faculty_coordinator">Faculty Coordinator</string>
+    <string name="view_faculty_name">Faculty Name</string>
+    <string name="view_faculty_eamil">Faculty Eamil</string>
+    <string name="view_faculty_contact_number">Faculty Contact Number</string>
+    <string name="view_student_coordinator_1">Student Coordinator 1</string>
+    <string name="view_student_name">Student name</string>
+    <string name="view_student_email">Student Email</string>
+    <string name="view_student_contact_number">Student Contact Number</string>
+    <string name="view_student_coordinator_2">Student Coordinator 2</string>
+    <string name="register">Register</string>
+    <string name="view_venue">Venue</string>
+</resources>

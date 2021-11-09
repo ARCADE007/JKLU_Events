@@ -9,6 +9,7 @@
     <color name="backgroundOrangeBlack">#1E1E1E</color>
     <color name="backgroundCreamGrey">#407A7979</color>
     <color name="emailBlueWhite">#FFFFFF</color>
+    <color name="backgroundCreamBlack">#FF000000</color>
     <color name="backgroundIcon">#F48222</color>
     <color name="icon">#1E1E1E</color>
     <color name="commonIcon">#0D8CD1</color>
