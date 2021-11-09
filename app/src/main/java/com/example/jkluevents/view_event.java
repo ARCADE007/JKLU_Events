@@ -15,9 +15,5 @@ public class view_event extends AppCompatActivity {
         setContentView(R.layout.activity_view_event);
         Toolbar toolbar = findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
-        Objects.requireNonNull(getSupportActionBar()).setDisplayHomeAsUpEnabled(true);
-
-
-
     }
 }
