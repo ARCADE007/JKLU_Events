@@ -26,5 +26,7 @@
         android:layout_height="wrap_content"
         android:text="@string/nav_header_subtitle"
         android:id="@+id/textView"
-        android:textColor="@color/emailBlueWhite"/>
+        android:textColor="@color/emailBlueWhite"
+        android:fontFamily="@font/roboto_medium"
+        android:textStyle="bold"/>
 </LinearLayout>
