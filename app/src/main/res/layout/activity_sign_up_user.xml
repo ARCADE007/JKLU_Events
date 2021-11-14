@@ -14,18 +14,29 @@
         android:gravity="center_horizontal"
         android:orientation="vertical">
 
-    <ImageView
-        android:layout_width="100dp"
-        android:layout_height="100dp"
-        android:layout_marginTop="50dp"
-        android:contentDescription="@string/app_name"
-        android:src="@drawable/jklu"/>
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_gravity="start"
+            android:layout_height="40dp"
+            android:layout_marginTop="20dp"
+            android:contentDescription="@string/app_name"
+            android:src="@drawable/back_arrow"
+            android:layout_marginLeft="10dp"
+            android:layout_marginStart="10dp"
+            />
+
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginTop="20dp"
+            android:contentDescription="@string/app_name"
+            android:src="@drawable/jklu"/>
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="10dp"
-            android:text="@string/jklu_events_heading"
+            android:text="JKLU Events"
             android:textColor="@color/blue"
             android:textSize="35sp"
             android:fontFamily="@font/roboto_medium"
@@ -34,7 +45,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="10dp"
-            android:text="Login"
+            android:text="Sign Up"
             android:textColor="@color/blue"
             android:textSize="20sp"
             android:fontFamily="@font/roboto_light"
@@ -99,28 +110,11 @@
                 android:layout_width="match_parent"
                 android:layout_height="50dp"
                 android:fontFamily="@font/roboto_light"
-                android:inputType="textPassword"
                 android:textColor="@color/textBlackWhite"
+                android:inputType="textPassword"
                 android:imeOptions="actionNext" />
 
-
         </com.google.android.material.textfield.TextInputLayout>
-
-
-        <TextView
-            android:layout_width="356dp"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="21dp"
-            android:layout_marginTop="7dp"
-            android:layout_marginBottom="10dp"
-            android:layout_marginEnd="30dp"
-            android:layout_marginRight="15dp"
-            android:fontFamily="@font/roboto_medium"
-            android:gravity="end"
-            android:text="@string/forgot_password"
-            android:textColor="@color/orange"
-            android:textSize="16sp" />
-
         <Button
             android:id="@+id/textButton"
             android:layout_width="match_parent"
@@ -128,61 +122,29 @@
             android:padding="15dp"
             android:layout_margin="20dp"
             android:backgroundTint="@color/orange"
-            android:text="@string/sign_in"
+            android:text="Sign Up"
             android:textColor="@color/textWhiteBlack"
             android:textSize="20sp"
             app:cornerRadius="20dp"
             android:fontFamily="@font/roboto_light"/>
-
-    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        android:weightSum="1" >
-        <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/don_t_have_an_account"
-        android:textColor="@color/textBlackWhite"
-        android:textSize="15sp" android:gravity="center"
-            android:layout_marginRight="10dp"
-        android:layout_weight="0.5"
-        android:textStyle="normal"
-        android:fontFamily="@font/roboto_light"/>
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/sign_up"
-            android:textColor="@color/orange"
-            android:gravity="center"
-            android:textSize="15sp"
-            android:layout_weight="0.5"
-            android:textStyle="normal"
-            android:fontFamily="@font/roboto_light"/>
-    </LinearLayout>
-
-
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="15dp"
+            android:layout_marginTop="-5dp"
             android:text="@string/by_creating_account_you_confirm_that_you_accept_our_1"
             android:textColor="@color/textBlackWhite"
             android:textSize="15sp"
             android:textStyle="normal"
             android:fontFamily="@font/roboto_light"/>
-
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/terms_of_use_privacy_policy_1"
             android:textColor="@color/orange"
-            android:layout_marginBottom="30dp"
             android:textSize="15sp"
             android:textStyle="bold"
+            android:layout_marginBottom="40dp"
             android:fontFamily="@font/roboto_light"/>
-
     </LinearLayout>
 
 </ScrollView>
