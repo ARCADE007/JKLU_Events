@@ -8,8 +8,14 @@
         android:label="@string/app_name"
         android:theme="@style/AppTheme">
 <!--        <activity-->
-<!--            android:name=".view_event"-->
+<!--            android:name=".moderatorSignUP"-->
 <!--            android:exported="false" />-->
+        <!-- <activity -->
+        <!-- android:name=".signUpUser" -->
+        <!-- android:exported="false" /> -->
+        <!-- <activity -->
+        <!-- android:name=".view_event" -->
+        <!-- android:exported="false" /> -->
         <!-- <activity -->
         <!-- android:name=".sidebar" -->
         <!-- android:exported="false" -->
@@ -19,7 +25,7 @@
         <!-- android:name=".createEvent" -->
         <!-- android:exported="false" /> -->
         <activity
-            android:name=".view_event"
+            android:name=".MainActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
