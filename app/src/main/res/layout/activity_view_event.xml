@@ -401,11 +401,11 @@
                 </LinearLayout>
                 <Button
                     android:id="@+id/textButton"
-                    android:layout_width="318dp"
-                    android:layout_height="63dp"
-                    android:layout_marginTop="20dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="15dp"
+                    android:layout_margin="20dp"
                     android:layout_gravity="center"
-                    android:layout_marginBottom="20dp"
                     android:text="@string/register"
                     android:fontFamily="@font/roboto_light"
                     android:textColor="@color/textWhiteBlack"
@@ -431,5 +431,34 @@
     android:layout_marginEnd="25dp">
 
 </com.google.android.material.floatingactionbutton.FloatingActionButton>
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|end"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="20dp"
+        app:backgroundTint="@color/backgroundIcon"
+        app:layout_anchorGravity="bottom|end|right"
+        android:src="@drawable/fab_edit"
+        app:tint="@color/textWhiteBlack"
+        tools:ignore="VectorDrawableCompat" />
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fab1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|end"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        app:tint="@color/textWhiteBlack"
+        android:layout_marginBottom="80dp"
+        app:backgroundTint="@color/backgroundIcon"
+        app:layout_anchorGravity="bottom|end|right"
+        android:src="@drawable/fab_delete"
+        tools:ignore="VectorDrawableCompat" />
 
 </androidx.coordinatorlayout.widget.CoordinatorLayout>

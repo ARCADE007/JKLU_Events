@@ -1,17 +1,23 @@
 <?xml version="1.0" encoding="utf-8"?>
-<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/backgroundWhiteBlack"
     tools:context=".createEvent">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:gravity="center_horizontal"
         android:orientation="vertical">
+
         <ImageView
             android:id="@+id/back_arrow"
             android:layout_width="40dp"
@@ -75,6 +81,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="50dp"
                 android:fontFamily="@font/roboto_light"
+                android:textColor="@color/textBlackWhite"
                 android:inputType="text"
                 android:imeOptions="actionNext"
 
@@ -87,10 +94,10 @@
             android:id="@+id/startDate_endDate"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:padding="15dp"
             android:layout_gravity="center"
             android:layout_margin="20dp"
             android:fontFamily="@font/roboto_light"
-            android:layout_marginTop="10dp"
             android:text="@string/select_date"
             android:backgroundTint="@color/orange"
             android:textSize="15sp"
@@ -105,7 +112,7 @@
             android:layout_width="match_parent"
             android:layout_margin="4dp"
             android:layout_height="wrap_content"
-            android:layout_marginTop="10dp"
+            android:padding="15dp"
             android:layout_weight="1"
             android:text="@string/start_time"
             android:backgroundTint="@color/orange"
@@ -119,7 +126,7 @@
             android:id="@+id/end_time"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="10dp"
+            android:padding="15dp"
             android:layout_margin="4dp"
             android:layout_weight="1"
             android:text="@string/end_time"
@@ -154,6 +161,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="50dp"
                 android:fontFamily="@font/roboto_light"
+                android:textColor="@color/textBlackWhite"
                 android:imeOptions="actionNext"
                 android:inputType="text"
 
@@ -182,6 +190,7 @@
                 android:layout_height="50dp"
                 android:fontFamily="@font/roboto_light"
                 android:imeOptions="actionNext"
+                android:textColor="@color/textBlackWhite"
                 android:inputType="text"
 
                 />
@@ -209,6 +218,7 @@
                 android:layout_height="300dp"
                 android:fontFamily="@font/roboto_light"
                 android:gravity="top"
+                android:textColor="@color/textBlackWhite"
                 android:imeOptions="actionNext"
                 android:inputType="text"
 
@@ -252,6 +262,7 @@
                 android:fontFamily="@font/roboto_light"
                 android:imeOptions="actionNext"
                 android:inputType="text"
+                android:textColor="@color/textBlackWhite"
 
                 />
 
@@ -277,6 +288,7 @@
             <com.google.android.material.textfield.TextInputEditText
                 android:layout_width="match_parent"
                 android:layout_height="50dp"
+                android:textColor="@color/textBlackWhite"
                 android:fontFamily="@font/roboto_light"
                 android:inputType="textEmailAddress"
                 android:imeOptions="actionNext"
@@ -306,6 +318,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="50dp"
                 android:fontFamily="@font/roboto_light"
+                android:textColor="@color/textBlackWhite"
                 android:imeOptions="actionNext"
                 android:inputType="phone"
 
@@ -347,6 +360,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="50dp"
                 android:fontFamily="@font/roboto_light"
+                android:textColor="@color/textBlackWhite"
                 android:imeOptions="actionNext"
                 android:inputType="text"
 
@@ -376,6 +390,7 @@
                 android:layout_height="50dp"
                 android:fontFamily="@font/roboto_light"
                 android:imeOptions="actionNext"
+                android:textColor="@color/textBlackWhite"
                 android:inputType="textEmailAddress"
 
                 />
@@ -405,6 +420,7 @@
                 android:fontFamily="@font/roboto_light"
                 android:imeOptions="actionNext"
                 android:inputType="phone"
+                android:textColor="@color/textBlackWhite"
 
                 />
 
@@ -445,6 +461,7 @@
                 android:fontFamily="@font/roboto_light"
                 android:imeOptions="actionNext"
                 android:inputType="text"
+                android:textColor="@color/textBlackWhite"
                 />
 
         </com.google.android.material.textfield.TextInputLayout>
@@ -472,6 +489,7 @@
                 android:fontFamily="@font/roboto_light"
                 android:imeOptions="actionNext"
                 android:inputType="textEmailAddress"
+                android:textColor="@color/textBlackWhite"
 
                 />
 
@@ -499,6 +517,7 @@
                 android:layout_height="50dp"
                 android:fontFamily="@font/roboto_light"
                 android:imeOptions="actionDone"
+                android:textColor="@color/textBlackWhite"
                 android:inputType="phone"
 
                 />
@@ -523,18 +542,23 @@
             android:fontFamily="@font/roboto_medium"
             android:textStyle="bold"/>
 
+
+
         <Button
             android:id="@+id/textButton"
-            android:layout_width="318dp"
-            android:layout_height="63dp"
-            android:layout_marginTop="20dp"
-            android:layout_marginBottom="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="15dp"
+            android:layout_margin="20dp"
             android:text="@string/create_event"
             android:fontFamily="@font/roboto_light"
             android:textColor="@color/textWhiteBlack"
             android:backgroundTint="@color/orange"
             android:textSize="20sp"
             app:cornerRadius="20dp" />
-    </LinearLayout>
 
-</ScrollView>
+
+    </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>
