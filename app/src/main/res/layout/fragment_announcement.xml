@@ -13,12 +13,12 @@
         android:gravity="center_horizontal"
         android:orientation="vertical">
 
+
 <com.google.android.material.card.MaterialCardView
     android:id="@+id/card"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:layout_margin="8dp"
-    android:adjustViewBounds="true"
+    android:layout_margin="20dp"
     android:backgroundTint="@color/backgroundCreamGrey" >
 
     <TextView
@@ -50,7 +50,7 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="16dp"
+                android:layout_marginTop="8dp"
                 android:text="@string/select_date"
                 android:textColor="@color/textBlackWhite"
                 android:fontFamily="@font/roboto_medium"
@@ -58,10 +58,10 @@
 
         </LinearLayout>
         <ImageView
-            android:layout_width="match_parent"
-            android:layout_height="194dp"
-            app:srcCompat="@drawable/input_image"
-            android:scaleType="centerCrop" />
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:adjustViewBounds="true"
+            app:srcCompat="@drawable/input_image" />
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -82,7 +82,7 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="16dp"
+                android:layout_marginTop="10dp"
                 android:text="@string/event_description"
                 android:textAppearance="?attr/textAppearanceBody2"
                 android:textColor="@color/textBlackWhite"
@@ -95,169 +95,6 @@
 
 </com.google.android.material.card.MaterialCardView>
 
-        <com.google.android.material.card.MaterialCardView
-            android:id="@+id/card1"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_margin="8dp"
-            android:adjustViewBounds="true"
-            android:backgroundTint="@color/backgroundCreamGrey" >
-
-            <TextView
-                android:id="@+id/text_announcement_1"
-                android:layout_width="0dp"
-                android:layout_height="0dp"
-                tools:ignore="MissingConstraints" />
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:orientation="vertical">
-
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:orientation="vertical"
-                    android:padding="16dp">
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="@string/event_name"
-                        android:textColor="@color/textBlackWhite"
-                        android:fontFamily="@font/roboto_medium"
-                        android:textAppearance="?attr/textAppearanceHeadline6"
-                        />
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginTop="16dp"
-                        android:text="@string/select_date"
-                        android:textColor="@color/textBlackWhite"
-                        android:fontFamily="@font/roboto_medium"
-                        android:textAppearance="?attr/textAppearanceBody2" />
-
-                </LinearLayout>
-                <ImageView
-                    android:layout_width="match_parent"
-                    android:layout_height="194dp"
-                    app:srcCompat="@drawable/input_image"
-                    android:scaleType="centerCrop" />
-
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:orientation="vertical"
-                    android:padding="16dp">
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginTop="16dp"
-                        android:text="@string/event_description_1"
-                        android:textAppearance="?attr/textAppearanceBody2"
-                        android:textColor="@color/textBlackOrange"
-                        android:textStyle="bold"
-                        android:fontFamily="@font/roboto_medium"/>
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginTop="16dp"
-                        android:text="@string/event_description"
-                        android:textAppearance="?attr/textAppearanceBody2"
-                        android:textColor="@color/textBlackWhite"
-                        android:fontFamily="@font/roboto_medium"/>
-
-                </LinearLayout>
-
-
-            </LinearLayout>
-
-        </com.google.android.material.card.MaterialCardView>
-
-        <com.google.android.material.card.MaterialCardView
-            android:id="@+id/card2"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_margin="8dp"
-            android:adjustViewBounds="true"
-            android:backgroundTint="@color/backgroundCreamGrey" >
-
-            <TextView
-                android:id="@+id/text_announcement_2"
-                android:layout_width="0dp"
-                android:layout_height="0dp"
-                tools:ignore="MissingConstraints" />
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:orientation="vertical">
-
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:orientation="vertical"
-                    android:padding="16dp">
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="@string/event_name"
-                        android:textColor="@color/textBlackWhite"
-                        android:fontFamily="@font/roboto_medium"
-                        android:textAppearance="?attr/textAppearanceHeadline6"
-                        />
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginTop="16dp"
-                        android:text="@string/select_date"
-                        android:textColor="@color/textBlackWhite"
-                        android:fontFamily="@font/roboto_medium"
-                        android:textAppearance="?attr/textAppearanceBody2" />
-
-                </LinearLayout>
-                <ImageView
-                    android:layout_width="match_parent"
-                    android:layout_height="194dp"
-                    app:srcCompat="@drawable/input_image"
-                    android:scaleType="centerCrop" />
-
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:orientation="vertical"
-                    android:padding="16dp">
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginTop="16dp"
-                        android:text="@string/event_description_1"
-                        android:textAppearance="?attr/textAppearanceBody2"
-                        android:textColor="@color/textBlackOrange"
-                        android:textStyle="bold"
-                        android:fontFamily="@font/roboto_medium"/>
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginTop="16dp"
-                        android:text="@string/event_description"
-                        android:textAppearance="?attr/textAppearanceBody2"
-                        android:textColor="@color/textBlackWhite"
-                        android:fontFamily="@font/roboto_medium"/>
-
-                </LinearLayout>
-
-
-            </LinearLayout>
-
-        </com.google.android.material.card.MaterialCardView>
 
 
     </LinearLayout>

@@ -149,6 +149,7 @@
         android:layout_weight="0.5"
         android:textStyle="normal"
         android:fontFamily="@font/roboto_light"/>
+
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
