@@ -9,15 +9,22 @@
 
     <com.google.android.material.appbar.AppBarLayout
         android:layout_height="wrap_content"
-        android:layout_width="match_parent"
-        android:theme="@style/AppTheme.AppBarOverlay">
+        android:layout_width="match_parent">
 
-        <androidx.appcompat.widget.Toolbar
+        <com.google.android.material.appbar.MaterialToolbar
             android:id="@+id/toolbar"
             android:layout_width="match_parent"
             android:layout_height="?attr/actionBarSize"
-            android:background="?attr/colorPrimary"
-            app:popupTheme="@style/AppTheme.PopupOverlay" />
+            android:backgroundTint="@color/backgroundOrangeBlack"
+            app:navigationIcon="@drawable/hamburger"
+            app:navigationIconTint="@color/white"
+            app:title="@string/event_name"
+            android:textSize="35sp"
+            android:fontFamily="@font/roboto_medium"
+            android:textStyle="bold"
+            app:titleTextColor="@color/white"
+            app:titleCentered="true"
+            style="@style/Widget.MaterialComponents.Toolbar.Primary" />
 
     </com.google.android.material.appbar.AppBarLayout>
 
@@ -32,6 +39,8 @@
         android:layout_marginBottom="20dp"
         app:srcCompat="@drawable/plus"
         app:backgroundTint="@color/backgroundIcon"
+        app:tint="@color/backgroundWhiteBlack"
+        app:elevation="6dp"
         tools:ignore="VectorDrawableCompat"
         android:layout_marginRight="20dp" />
 
