@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "116637530051",
+    "project_id": "jklu-events",
+    "storage_bucket": "jklu-events.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:116637530051:android:e79f10599dbe359f952f76",
+        "android_client_info": {
+          "package_name": "com.example.jkluevents"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "116637530051-7v4rmhrkvc6ln065pgpd8bddqc4h1uok.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCoJMbFdJjulnNDFJdd_ota05UU62_Wuk0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "116637530051-7v4rmhrkvc6ln065pgpd8bddqc4h1uok.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
