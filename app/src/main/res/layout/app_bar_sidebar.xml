@@ -30,18 +30,4 @@
 
     <include layout="@layout/content_sidebar"/>
 
-    <com.google.android.material.floatingactionbutton.FloatingActionButton
-        android:id="@+id/fab"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="bottom|end"
-        android:layout_marginEnd="20dp"
-        android:layout_marginBottom="20dp"
-        app:srcCompat="@drawable/fab_plus"
-        app:backgroundTint="@color/backgroundIcon"
-        app:tint="@color/backgroundWhiteBlack"
-        app:elevation="6dp"
-        tools:ignore="VectorDrawableCompat"
-        android:layout_marginRight="20dp" />
-
 </androidx.coordinatorlayout.widget.CoordinatorLayout>
