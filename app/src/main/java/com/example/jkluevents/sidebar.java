@@ -3,36 +3,38 @@ package com.example.jkluevents;
 import android.os.Bundle;
 import android.view.View;
 import android.view.Menu;
+import android.widget.ScrollView;
+
 import com.google.android.material.snackbar.Snackbar;
 import com.google.android.material.navigation.NavigationView;
+
 import androidx.navigation.NavController;
 import androidx.navigation.Navigation;
 import androidx.navigation.ui.AppBarConfiguration;
 import androidx.navigation.ui.NavigationUI;
 import androidx.drawerlayout.widget.DrawerLayout;
 import androidx.appcompat.app.AppCompatActivity;
+
 import com.example.jkluevents.databinding.ActivitySidebarBinding;
+import com.google.firebase.firestore.FirebaseFirestore;
 
 public class sidebar extends AppCompatActivity {
+    private ScrollView scrollView;
+    private FirebaseFirestore db;
 
     private AppBarConfiguration mAppBarConfiguration;
-private ActivitySidebarBinding binding;
+    private ActivitySidebarBinding binding;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        scrollView = findViewById(R.id.scrollView);
 
-     binding = ActivitySidebarBinding.inflate(getLayoutInflater());
-     setContentView(binding.getRoot());
+        db = FirebaseFirestore.getInstance();
+        binding = ActivitySidebarBinding.inflate(getLayoutInflater());
+        setContentView(binding.getRoot());
 
         setSupportActionBar(binding.appBarSidebar.toolbar);
-        binding.appBarSidebar.fab.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
-                        .setAction("Action", null).show();
-            }
-        });
         DrawerLayout drawer = binding.drawerLayout;
         NavigationView navigationView = binding.navView;
         // Passing each menu ID as a set of Ids because each
@@ -45,7 +47,6 @@ private ActivitySidebarBinding binding;
         NavigationUI.setupActionBarWithNavController(this, navController, mAppBarConfiguration);
         NavigationUI.setupWithNavController(navigationView, navController);
     }
-
 
 
     @Override
